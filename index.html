@@ -1,9 +1,16 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Hello World Page</title>
-  </head>
-  <body>
-    <h1>Hello, World!</h1>
-  </body>
+<head>
+</head>
+<body>
+  <button onclick="sayHello()">qergqwegqwegqwegqweg</button>
+
+  <script>
+    function sayHello() {
+      fetch('/negrotest', { method: 'POST' })
+        .then(r => r.json())
+        .then(data => console.log(data));
+    }
+  </script>
+</body>
 </html>
